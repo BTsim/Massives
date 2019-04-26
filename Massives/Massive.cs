@@ -217,15 +217,18 @@ namespace Massive
         {
             Console.WriteLine("Enter the sentence");
             string sentence = Console.ReadLine();
-            int numberOfLetters = sentence.Length;
-            if (numberOfLetters > 13)
-            {
-                for (int i = 0; i < 13; i++)
-                {
-                    Console.Write(sentence[i]);
-                }
-                Console.Write("...");
-            }
+            Console.WriteLine(sentence.Remove(13,(sentence.Length-13))+"...");
+
+
+           // int numberOfLetters = sentence.Length;
+            //if (numberOfLetters > 13)
+            //{
+              //  for (int i = 0; i < 13; i++)
+                //{
+                  //  Console.Write(sentence[i]);
+                //}
+                //Console.Write("...");
+            //}
         }
 
         public static void B6_P6_6_ReplaceInPoem()
